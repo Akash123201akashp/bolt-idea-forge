@@ -4,18 +4,18 @@ import { Card, CardContent } from "@/components/ui/card";
 const steps = [
   {
     icon: Brain,
-    title: "Dump Your Idea",
-    description: "Write your raw thoughts, features, and vision in natural language. No structure needed."
+    title: "Share Idea",
+    description: "Write your thoughts"
   },
   {
     icon: Cpu,
     title: "AI Processes",
-    description: "Our advanced AI analyzes your input and identifies key components, requirements, and priorities."
+    description: "AI analyzes your input"
   },
   {
     icon: FileText,
-    title: "Get Structured Plan",
-    description: "Receive a comprehensive product specification with features, user stories, and implementation roadmap."
+    title: "Get Plan",
+    description: "Receive structured output"
   }
 ];
 
@@ -23,13 +23,10 @@ export function HowItWorks() {
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl font-bold text-foreground mb-8">
             How It Works
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Transform chaotic thoughts into structured plans in three simple steps
-          </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
