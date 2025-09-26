@@ -24,15 +24,33 @@ export function HeroSection({ onGetStarted }: HeroSectionProps) {
           </div>
           
           {/* CTA Button */}
-          <Button 
-            variant="hero" 
-            size="lg" 
-            onClick={onGetStarted}
-            className="group mb-8"
-          >
-            Get Started
-            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <div className="mb-16">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              onClick={onGetStarted}
+              className="group"
+            >
+              Get Started
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </div>
+          
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-8 max-w-md mx-auto">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-foreground">500+</div>
+              <div className="text-sm text-muted-foreground">Ideas Processed</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-foreground">3s</div>
+              <div className="text-sm text-muted-foreground">Avg Response</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-foreground">100%</div>
+              <div className="text-sm text-muted-foreground">Free to Use</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
